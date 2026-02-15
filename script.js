@@ -104,3 +104,47 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
+
+// --- Visitor tracking (Discord webhook) ---
+(function () {
+    // Bot detection
+    const ua = navigator.userAgent || '';
+    const botPatterns = /bot|crawl|spider|slurp|bingpreview|mediapartners|facebookexternalhit|twitterbot|linkedinbot|discordbot|telegrambot|whatsapp|pintrest|semrush|ahref|mj12bot|dotbot|petalbot|yandex|baidu|sogou|google|headless|phantom|selenium|puppeteer|playwright|wget|curl|httpie|python-requests|go-http|java\/|libwww|apache-http/i;
+
+    if (botPatterns.test(ua)) return;
+    if (navigator.webdriver) return;
+    if (!window.chrome && /Chrome/.test(ua)) return; // headless Chrome
+
+    const now = new Date();
+    const timestamp = now.toLocaleString('en-US', {
+        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+    });
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    const payload = {
+        embeds: [{
+            title: "🌐 New Site Visit",
+            color: 3447003,
+            fields: [
+                { name: "⏰ Time", value: timestamp, inline: true },
+                { name: "🌍 Timezone", value: timezone, inline: true },
+                { name: "📄 Page", value: location.href, inline: false },
+                { name: "📎 Referrer", value: document.referrer || "Direct", inline: true },
+                { name: "🖥️ Screen", value: `${screen.width}x${screen.height}`, inline: true },
+                { name: "📱 Platform", value: navigator.platform || "Unknown", inline: true },
+                { name: "🌐 Language", value: navigator.language || "Unknown", inline: true },
+                { name: "🔧 User Agent", value: ua.substring(0, 1024), inline: false }
+            ],
+            footer: { text: "Nyrox Visitor Tracker" },
+            timestamp: now.toISOString()
+        }]
+    };
+
+    fetch("https://discord.com/api/webhooks/1472743125385744495/-OS_88t2dMAzv4bIjAuuvYsly4Jj8UDxuWiboHSdB2WiLaCDbZFbjR98i_gLwHNxckyy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+    }).catch(() => {});
+})();
