@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary: #9b5cff;
-    --primary-light: #b57fff;
-    --primary-lighter: #d0a8ff;
-    --primary-dark: #7c3aed;
-    --primary-darker: #6d28d9;
+    --primary: #3b82f6;
+    --primary-light: #60a5fa;
+    --primary-lighter: #93c5fd;
+    --primary-dark: #2563eb;
+    --primary-darker: #1d4ed8;
 
     --background: #000000;
     --background-light: #111111;
@@ -19,17 +19,17 @@
     --text-secondary: #A0A0A0;
     --text-tertiary: #707070;
 
-    --surface: rgba(155, 92, 255, 0.1);
-    --surface-light: rgba(155, 92, 255, 0.05);
-    --surface-dark: rgba(155, 92, 255, 0.15);
+    --surface: rgba(59, 130, 246, 0.1);
+    --surface-light: rgba(59, 130, 246, 0.05);
+    --surface-dark: rgba(59, 130, 246, 0.15);
 
-    --border: rgba(155, 92, 255, 0.2);
-    --border-light: rgba(155, 92, 255, 0.1);
-    --border-dark: rgba(155, 92, 255, 0.3);
+    --border: rgba(59, 130, 246, 0.2);
+    --border-light: rgba(59, 130, 246, 0.1);
+    --border-dark: rgba(59, 130, 246, 0.3);
 
-    --glow-primary: 0 0 20px rgba(155, 92, 255, 0.3);
-    --glow-strong: 0 0 30px rgba(155, 92, 255, 0.5);
-    --glow-weak: 0 0 10px rgba(155, 92, 255, 0.2);
+    --glow-primary: 0 0 20px rgba(59, 130, 246, 0.3);
+    --glow-strong: 0 0 30px rgba(59, 130, 246, 0.5);
+    --glow-weak: 0 0 10px rgba(59, 130, 246, 0.2);
 
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
@@ -89,8 +89,8 @@ p {
     top: -50%;
     left: -50%;
     background-image:
-        linear-gradient(rgba(155, 92, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(155, 92, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
     transform: perspective(500px) rotateX(60deg);
     animation: grid-move 20s linear infinite;
@@ -176,9 +176,11 @@ p {
     gap: 0.75rem;
 }
 
-.brand-icon {
-    font-size: 1.5rem;
-    color: var(--primary);
+.brand-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 .brand-text {
@@ -534,7 +536,7 @@ p {
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(155, 92, 255, 0.05),
+        rgba(59, 130, 246, 0.05),
         transparent
     );
     animation: shine 3s infinite;
@@ -603,7 +605,7 @@ p {
 .feature-v2-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(155, 92, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .feature-v2-card::before {
@@ -786,6 +788,19 @@ p {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-sm);
+}
+
+.footer-brand-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .footer-brand h3 {

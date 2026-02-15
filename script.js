@@ -39,7 +39,7 @@ const featureCards = document.querySelectorAll('.feature-v2-card');
 featureCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
         card.style.transform = 'translateY(-10px)';
-        card.style.boxShadow = '0 10px 30px rgba(155, 92, 255, 0.2)';
+        card.style.boxShadow = '0 10px 30px rgba(59, 130, 246, 0.2)';
     });
 
     card.addEventListener('mouseleave', () => {

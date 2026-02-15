@@ -4,13 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyrox - Next Generation Script Execution</title>
-    <meta content="Nyrox" property="og:title" />
-    <meta content="The Most Advanced Roblox Executor" property="og:description" />
-    <meta content="#9b5cff" data-react-helmet="true" name="theme-color" />
+    <title>Nyrox - Next Generation Roblox Script Executor</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Nyrox is the most advanced free Roblox script executor. Execute Lua scripts instantly with full Hyperion bypass, auto-updates, and universal game support. Undetected and optimized for performance.">
+    <meta name="keywords" content="Nyrox, Roblox executor, Roblox script executor, Lua executor, Roblox exploit, free Roblox executor, Hyperion bypass, script execution, Roblox hack, undetected executor">
+    <meta name="author" content="Nyrox Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nyrox - Next Generation Roblox Script Executor">
+    <meta property="og:description" content="The most powerful free Roblox executor. Execute any Lua script with 1ms execution speed, full Hyperion bypass, and 100% undetected status. Trusted by thousands of users.">
+    <meta property="og:image" content="icon.png">
+    <meta property="og:site_name" content="Nyrox">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nyrox - Advanced Roblox Executor">
+    <meta name="twitter:description" content="Free, undetected Roblox script executor with instant Lua execution, Hyperion bypass, and auto-updates. Supports all Roblox games.">
+    <meta name="twitter:image" content="icon.png">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#3b82f6">
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -19,36 +42,43 @@
 <body>
     <div class="background-effects">
         <div class="grid-lines"></div>
+        <div class="noise-overlay"></div>
         <div class="glow-orbs">
             <div class="orb orb-1"></div>
             <div class="orb orb-2"></div>
             <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
         </div>
     </div>
 
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <i class="fas fa-bolt brand-icon"></i>
+                <img src="icon.png" alt="Nyrox" class="brand-logo">
                 <span class="brand-text">NYROX</span>
+                <span class="brand-version">v3.2</span>
             </div>
 
             <div class="nav-menu">
                 <a href="#features" class="nav-item">
-                    <i class="fas fa-bolt"></i>
+                    <i class="fas fa-cube"></i>
                     <span>Features</span>
                 </a>
                 <a href="#showcase" class="nav-item">
-                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-play-circle"></i>
                     <span>Showcase</span>
                 </a>
                 <a href="#faq" class="nav-item">
-                    <i class="fas fa-circle-question"></i>
+                    <i class="fas fa-message"></i>
                     <span>FAQ</span>
                 </a>
             </div>
 
             <div class="nav-actions">
+                <div class="nav-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </div>
                 <a href="#" class="btn-discord">
                     <i class="fab fa-discord"></i>
                     <span>Discord</span>
@@ -62,44 +92,68 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <div class="badge-glow"></div>
-                    <span class="badge-icon">&#x1F49C;</span>
-                    <span class="badge-text">UNDETECTED</span>
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">FULLY UNDETECTED</span>
+                    <span class="badge-separator">|</span>
+                    <span class="badge-sub">Hyperion Bypass Active</span>
                 </div>
                 <h1 class="hero-title">
-                    Next Generation
-                    <div class="gradient-text">Script Execution</div>
+                    <span class="hero-title-top">Next-Gen</span>
+                    <div class="gradient-text">Script Executor</div>
+                    <span class="hero-title-sub">for Roblox</span>
                 </h1>
                 <p class="hero-description">
-                    Experience unmatched power and precision with Nyrox's cutting-edge executor.
-                    Instant execution, unlimited possibilities.
+                    The most powerful Roblox executor built for speed and stealth.
+                    Execute any Lua script instantly with full Hyperion bypass.
                 </p>
                 <div class="hero-actions">
-                    <button onclick="window.location.href='#';" class="btn-primary">
-                        <span>Download</span>
-                        <i class="fas fa-arrow-right"></i>
+                    <button onclick="window.location.href='https://cdn.discordapp.com/attachments/1472709361225961625/1472709396768489625/Nyrox.rar?ex=69938f01&is=69923d81&hm=436129caa2ea6aa4e19f4a03c88f0e61ba6cac51c169e3bf4cd0e4f6bcb82a76&';" class="btn-primary btn-download">
+                        <i class="fas fa-download"></i>
+                        <span>Download Now</span>
                         <div class="btn-glow"></div>
                     </button>
                     <button onclick="window.location.href='#showcase';" class="btn-primary btn-outline-hero">
-                        <span>Showcase</span>
                         <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
                         <div class="btn-glow"></div>
                     </button>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <i class="fas fa-bolt stat-icon"></i>
-                        <div class="stat-value">1ms</div>
-                        <div class="stat-label">Execution Time</div>
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-bolt stat-icon"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-value">1ms</div>
+                            <div class="stat-label">Execution</div>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-users stat-icon"></i>
-                        <div class="stat-value">255K+</div>
-                        <div class="stat-label">Active Users</div>
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-users stat-icon"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-value">632</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-shield-halved stat-icon"></i>
-                        <div class="stat-value">100%</div>
-                        <div class="stat-label">Undetected</div>
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-shield-halved stat-icon"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Undetected</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrap">
+                            <i class="fas fa-gamepad stat-icon"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-value">All</div>
+                            <div class="stat-label">Games</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,30 +199,71 @@ executor.config.<span class="code-func">lua</span>({
 
     <section class="features-v2" id="features">
         <div class="section-header">
-            <h2>Features</h2>
-            <p>Experience the power of Nyrox Executor</p>
+            <span class="section-tag">CAPABILITIES</span>
+            <h2>Why Choose Nyrox</h2>
+            <p>Built from the ground up for maximum performance and reliability</p>
         </div>
         <div class="features-v2-grid">
-            <div class="feature-v2-card">
+            <div class="feature-v2-card featured">
+                <div class="feature-v2-badge">Popular</div>
                 <div class="feature-v2-icon">
                     <i class="fas fa-bolt"></i>
                 </div>
                 <h3>Instant Execution</h3>
-                <p>Execute any script instantly with our optimized engine</p>
+                <p>Execute any Lua script in under 1ms with our highly optimized engine and memory management</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">Lightning Fast</span>
+                </div>
+            </div>
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h3>Hyperion Bypass</h3>
+                <p>Advanced anti-cheat bypass that keeps you fully undetected at all times</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">Always Updated</span>
+                </div>
             </div>
             <div class="feature-v2-card">
                 <div class="feature-v2-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <h3>Stable & Reliable</h3>
-                <p>Built for performance and stability across all games</p>
+                <h3>Full Lua Support</h3>
+                <p>Complete Lua 5.1 compatibility with custom extensions for Roblox scripting</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">Compatible</span>
+                </div>
             </div>
             <div class="feature-v2-card">
                 <div class="feature-v2-icon">
-                    <i class="fas fa-sync"></i>
+                    <i class="fas fa-rotate"></i>
                 </div>
                 <h3>Auto Updates</h3>
-                <p>Stay up to date with automatic updates and patches</p>
+                <p>Automatic updates ensure you always have the latest bypass and features</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">Seamless</span>
+                </div>
+            </div>
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <h3>Script Hub</h3>
+                <p>Built-in script library with hundreds of ready-to-use scripts for popular games</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">500+ Scripts</span>
+                </div>
+            </div>
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-gauge-high"></i>
+                </div>
+                <h3>Lightweight</h3>
+                <p>Minimal resource usage — runs smoothly even on low-end systems without FPS drops</p>
+                <div class="feature-v2-footer">
+                    <span class="feature-tag">Optimized</span>
+                </div>
             </div>
         </div>
     </section>
@@ -233,11 +328,35 @@ executor.config.<span class="code-func">lua</span>({
         </div>
     </section>
 
+    <section class="trust-bar">
+        <div class="trust-items">
+            <div class="trust-item">
+                <i class="fas fa-lock"></i>
+                <span>Secure Download</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-virus-slash"></i>
+                <span>Virus Free</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-clock"></i>
+                <span>24/7 Support</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-arrows-rotate"></i>
+                <span>Daily Updates</span>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>Nyrox</h3>
-                <p>Next generation script execution</p>
+                <div class="footer-brand-row">
+                    <img src="icon.png" alt="Nyrox" class="footer-logo">
+                    <h3>Nyrox</h3>
+                </div>
+                <p>Next generation Roblox script executor. Fast, undetected, and free.</p>
             </div>
             <div class="footer-links">
                 <div class="footer-section">
