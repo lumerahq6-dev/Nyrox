@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyrox - Next Generation Script Execution</title>
+    <meta content="Nyrox" property="og:title" />
+    <meta content="The Most Advanced Roblox Executor" property="og:description" />
+    <meta content="#9b5cff" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="grid-lines"></div>
+        <div class="glow-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-bolt brand-icon"></i>
+                <span class="brand-text">NYROX</span>
+            </div>
+
+            <div class="nav-menu">
+                <a href="#features" class="nav-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Features</span>
+                </a>
+                <a href="#showcase" class="nav-item">
+                    <i class="fas fa-tv"></i>
+                    <span>Showcase</span>
+                </a>
+                <a href="#faq" class="nav-item">
+                    <i class="fas fa-circle-question"></i>
+                    <span>FAQ</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#" class="btn-discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <div class="badge-glow"></div>
+                    <span class="badge-icon">&#x1F49C;</span>
+                    <span class="badge-text">UNDETECTED</span>
+                </div>
+                <h1 class="hero-title">
+                    Next Generation
+                    <div class="gradient-text">Script Execution</div>
+                </h1>
+                <p class="hero-description">
+                    Experience unmatched power and precision with Nyrox's cutting-edge executor.
+                    Instant execution, unlimited possibilities.
+                </p>
+                <div class="hero-actions">
+                    <button onclick="window.location.href='#';" class="btn-primary">
+                        <span>Download</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button onclick="window.location.href='#showcase';" class="btn-primary btn-outline-hero">
+                        <span>Showcase</span>
+                        <i class="fas fa-play"></i>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-bolt stat-icon"></i>
+                        <div class="stat-value">1ms</div>
+                        <div class="stat-label">Execution Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users stat-icon"></i>
+                        <div class="stat-value">255K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-halved stat-icon"></i>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Undetected</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="preview-header">
+                        <div class="window-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="preview-tabs">
+                            <div class="tab active">main.lua</div>
+                        </div>
+                    </div>
+                    <div class="preview-editor">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                        </div>
+                        <pre class="code-content"><code><span class="code-comment">-- Initialize Nyrox</span>
+<span class="code-keyword">local</span> script = <span class="code-func">require</span>(<span class="code-string">"bypass"</span>)
+
+<span class="code-comment">-- Configure settings</span>
+executor.config.<span class="code-func">lua</span>({
+    bypass = <span class="code-string">"hyperion"</span>
+})
+
+<span class="code-comment">-- Execute script</span>
+<span class="code-keyword">local</span> success = lua:<span class="code-func">execute</span>(script)</code></pre>
+                    </div>
+                    <div class="preview-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-v2" id="features">
+        <div class="section-header">
+            <h2>Features</h2>
+            <p>Experience the power of Nyrox Executor</p>
+        </div>
+        <div class="features-v2-grid">
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Instant Execution</h3>
+                <p>Execute any script instantly with our optimized engine</p>
+            </div>
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Stable & Reliable</h3>
+                <p>Built for performance and stability across all games</p>
+            </div>
+            <div class="feature-v2-card">
+                <div class="feature-v2-icon">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <h3>Auto Updates</h3>
+                <p>Stay up to date with automatic updates and patches</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+        <div class="section-header">
+            <h2>Showcase</h2>
+            <p>See Nyrox in action</p>
+        </div>
+        <div class="showcase-content">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Nyrox Showcase"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <h2>FAQ</h2>
+            <p>Frequently asked questions</p>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Is Nyrox free to use?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Nyrox is completely free to download and use. No hidden fees or subscriptions required.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Is Nyrox undetected?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Nyrox uses advanced bypass methods to remain fully undetected. We update regularly to maintain this status.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How do I install Nyrox?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply download the latest version, extract the files, and run the executable. It's that easy!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>What games does Nyrox support?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nyrox supports all Roblox games. Our engine is universally compatible with the Roblox platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Nyrox</h3>
+                <p>Next generation script execution</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <a href="#features">Features</a>
+                    <a href="#showcase">Showcase</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Nyrox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
